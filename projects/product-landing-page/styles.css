@@ -1,0 +1,12 @@
+#nav-bar {
+    top: 0;
+    position: fixed;;
+}
+
+header {
+    display: flex;
+}
+
+@media only screen and (max-widht: 500px) {
+
+}
