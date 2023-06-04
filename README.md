@@ -10,3 +10,5 @@ projects from freecodecamp responsive web design
 <a href="https://larabmelo.github.io/freecodecamp/projects/tribute-page/index.html" target="_blank">tribute page project</a>
 
 <a href="https://larabmelo.github.io/freecodecamp/projects/product-landing-page/index.html" target="_blank">product landing page project</a>
+
+<a href="https://larabmelo.github.io/freecodecamp/projects/happy-penguin/index.html" target="_blank">happy penguin project</a>
