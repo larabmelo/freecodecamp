@@ -87,11 +87,12 @@ form {
 }
 
 input[type=email] {
-    height: 30px;
+    height: 35px;
     padding: 10px;
     width: 300px;
     border: 1px solid rgb(133, 131, 131);
     border-radius: 5px;
+    font-size: 1.1em;
 }
 
 input[type=submit] {
@@ -118,7 +119,7 @@ input[type=submit]:hover {
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   margin-top: 60px;
+   margin-top: 40px;
    margin-bottom: 80px;
    padding: 10px;
    max-width: 900px;
@@ -256,10 +257,12 @@ footer span {
     #nav-bar {
         flex-direction: column;
         padding: 10px;
+        padding-top: 30px;
     }
 
     #nav-bar li {
         padding: 10px;
+        text-decoration: underline;
     }
 
     #form-area {
@@ -270,7 +273,7 @@ footer span {
     }
 
     #features {
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 100px;
     }
 
