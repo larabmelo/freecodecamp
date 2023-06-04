@@ -1,5 +1,5 @@
 :root {
-    --button-color: #f0bd22;
+    --button-color: #eac967;
     --icon-color: #f0bd22;
 }
 
@@ -15,11 +15,11 @@ body {
     
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header {
+    background-color: white;
 }
+
+
 
 #nav-bar {
     top: 0;
@@ -31,11 +31,11 @@ main {
     padding: 0px 20px;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 #nav-bar > ul {
     display: flex;
-    width: 35vw;
     flex-direction: row;
     justify-content: space-around;
     margin-right: 10px;
@@ -58,9 +58,10 @@ main {
 
 }
 
-li {
+#nav-bar li {
     list-style: none;
-    padding: 5px;
+    padding: 15px;
+    text-align: center;
 }
 
 #form-area {
@@ -102,14 +103,27 @@ input[type=submit] {
     font-weight: 700;
     border-radius: 5px;
     border: 1px solid transparent;
-    background-color: var(--button-color)
+    background-color: var(--button-color);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #f0bd22;
+    transition: 0.7s;
+    
 }
 
 #features {
    display: flex;
    flex-direction: row;
    align-items: center;
-   height: 300px;
+   justify-content: center;
+   margin-top: 60px;
+   margin-bottom: 80px;
+   padding: 10px;
+   max-width: 900px;
+   margin-left: auto;
+   margin-right: auto;
    
 }
 
@@ -118,8 +132,8 @@ input[type=submit] {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
     color: var(--icon-color);
     height: 180px;
 }
@@ -128,10 +142,8 @@ input[type=submit] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80vw;
     row-gap: 30px;
     height: 180px;
-    margin-right: 20px;
     word-wrap: break-word;
 }
 
@@ -139,13 +151,170 @@ input[type=submit] {
     font-size: 1.3em;
 }
 
-#video-how {
-    display: flex;
 
+iframe {
+    display: flex;
+    margin: auto;
 }
 
 #pricing {
     display: flex;
 }
 
+#video-how {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.tenor, .bass, .valve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: calc(100%/3);
+    margin: 10px;
+}
+
+.product-title {
+    padding: 15px;
+    font-size: 0.9em;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+#pricing ul {
+    list-style: none;
+    padding: 20px;
+    font-size: 0.9em;
+    
+}
+
+#pricing li {
+    padding: 4px;
+}
+
+#pricing input {
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+footer li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #444;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    #nav-bar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #nav-bar li {
+        padding: 10px;
+    }
+
+    #form-area {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #features {
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    #features .features-div {
+        max-width: 200px;
+    }
+
+    #features .feature-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 20px;
+        color: var(--icon-color);
+        height: 300px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        word-wrap: break-word;
+    }
+
+    input[type=email] {
+        height: 40px;
+        padding: 10px;
+        width: 200px;
+        border: 1px solid rgb(133, 131, 131);
+        border-radius: 5px;
+    }
+   
+    iframe {
+        width: 300px;
+        height: 150px;
+    }
+
+    #pricing {
+        flex-direction: column;
+    }
+
+    .tenor, .bass, .valve {
+        width: 280px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+  }
