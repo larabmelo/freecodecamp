@@ -1,6 +1,5 @@
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -192,6 +191,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #profile-link {
@@ -217,4 +217,52 @@ footer {
     text-align: center;
     align-items: center;
     padding: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #nav-bar {
+        justify-content: center;
+    }
+
+    #nav-bar ul {
+        margin-right: 0;
+    }
+
+    #about h1 {
+        font-size: 2.8rem;
+    }
+
+    #about p {
+        font-size: 1.2em;
+        max-width: 80%;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .projects-header {
+        margin-top: 20px;
+        height: 100px;
+    }
+
+    .projects-header h2 {
+        border-bottom: 0;
+        font-size: 1.3em;
+        
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+    
+    #contact-links {
+        font-size: 1.4em;
+    }
+
+
+    
 }
