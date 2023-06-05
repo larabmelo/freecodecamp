@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I am Lara</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,400&family=Raleway:wght@700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3d62521cd4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -28,51 +32,53 @@
 
         <section id="about">
             <h1>Hey, I am Lara</h1>
-            <p>a web developer and product designer based in Munich</p>
+            <p>a web developer based in Munich</p>
         </section>
 
-        <section id="projects">
-            <h2>These are some of my projects</h2>
-            <hr>
-            <div class="projects">
-                <div class="project-1">
-                    <a href="">
-                        <img src="images/tribute.png" alt="Norman Borlaug Tribute Page">
-                        <p class="project-title">Tribute Page</p>
-                    </a>
-                </div>
-                <div class="project-2">
-                    <a href="">
-                        <img src="images/penguin.png" alt="Waving Penguin">
-                        <p class="project-title">Happy Penguin</p>
-                    </a>
-                </div>
-                <div class="project-3">
-                    <a href="">
-                        <img src="images/product.png" alt="Trombones Landing Page">
-                        <p class="project-title">Product Landing Page</p>
-                    </a>
-                </div>
-                <div class="project-4">
-                    <a href="">
-                        <img src="images/skyline.png" alt="City Skyline Daylight">
-                        <p class="project-title">City Skyline</p>
-                    </a>
-                </div>
-                <div class="project-5">
-                    <a href="">
-                        <img src="images/survey.png" alt="Survey Form">
-                        <p class="project-title">Survey Form</p>
-                    </a>
-                </div>
-                <div class="project-6">
-                    <a href="">
-                        <img src="images/documentation.png" alt="JavaScript Documentation Page">
-                        <p class="project-title">JavaScript Documentation</p>
-                    </a>
-                </div>
-                <a href="https://larabmelo.github.io/freecodecamp/" class="btn">Show All</a>
+        <section id="projects-section">
+            <div class="projects-header">
+                <h2>These are some of my projects</h2>
             </div>
+            <div class="projects">
+                <div class="project">
+                    <a href="https://larabmelo.github.io/freecodecamp/projects/tribute-page/index.html" target="_blank">
+                        <img src="images/tribute.png" alt="Norman Borlaug Tribute Page">
+                        <p class="project-title"><span class="code">&lt;</span>Tribute Page<span class="code">/&gt;</span></p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://larabmelo.github.io/freecodecamp/projects/happy-penguin/index.html" target="_blank">
+                        <img src="images/penguin.png" alt="Waving Penguin">
+                        <p class="project-title"><span class="code">&lt;</span>Happy Penguin<span class="code">/&gt;</span></p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://larabmelo.github.io/freecodecamp/projects/product-landing-page/index.html" target="_blank">
+                        <img src="images/product.png" alt="Trombones Landing Page">
+                        <p class="project-title"><span class="code">&lt;</span>Product Landing Page<span class="code">/&gt;</span></p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://larabmelo.github.io/freecodecamp/projects/city-skyline/index.html" target="_blank">
+                        <img src="images/skyline.png" alt="City Skyline Daylight">
+                        <p class="project-title"><span class="code">&lt;</span>City Skyline<span class="code">/&gt;</span></p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://larabmelo.github.io/freecodecamp/projects/survey-form/index.html" target="_blank">
+                        <img src="images/survey.png" alt="Survey Form">
+                        <p class="project-title"><span class="code">&lt;</span>Survey Form<span class="code">/&gt;</span></p>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://larabmelo.github.io/freecodecamp/projects/documentation-page/index.html" target="_blank">
+                        <img src="images/documentation.png" alt="JavaScript Documentation Page">
+                        <p class="project-title"><span class="code">&lt;</span>JavaScript Documentation<span class="code">/&gt;</span></p>
+                    </a>
+                </div>
+                
+            </div>
+            <a href="https://github.com/larabmelo/" class="btn" target="_blank">Show All</a>
         </section>
 
         <section id="contact">
@@ -82,7 +88,14 @@
             </div>
 
             <div class="contact-links">
-                <a id="profile-link" target="_blank" href="https://larabmelo.github.io">GitHub</a>
+
+                <a id="profile-link" target="_blank" href="https://larabmelo.github.io"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/laramelo/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a id="profile-link" target="_blank" href="https://twitter.com/thedevreturns"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                
+
+
+
             </div>
         </section>
 
@@ -90,7 +103,7 @@
 
     <footer>
         <p>© Created for <a href="https://www.freecodecamp.com/" target="b
-            "></a>freeCodeCamp</p>
+            "></a>freeCodeCamp <i class="fa-brands fa-free-code-camp"></i></p>
     </footer>
     
 </body>
