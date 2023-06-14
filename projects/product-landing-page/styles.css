@@ -144,7 +144,7 @@ input[type=submit]:hover {
     flex-direction: column;
     justify-content: center;
     row-gap: 30px;
-    height: 180px;
+    /* height: 180px; */
     word-wrap: break-word;
 }
 
@@ -258,6 +258,11 @@ footer span {
         flex-direction: column;
         padding: 10px;
         padding-top: 30px;
+        
+    }
+
+    #nav-bar ul {
+        margin-top: 20px;
     }
 
     #nav-bar li {
@@ -266,15 +271,15 @@ footer span {
     }
 
     #form-area {
-        margin-top: 100px;
-        margin-bottom: 80px;
+        margin-top: 130px;
+        margin-bottom: 20px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
     #features {
         margin-top: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
 
     #features .features-div {
